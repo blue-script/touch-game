@@ -85,3 +85,28 @@ function getRandomColor() {
     }
     return color
 }
+
+// Выиграть игру автоматически
+function winTheGame() {
+    function kill() {
+        const circle = document.querySelector('.circle')
+
+        if (circle) {
+            circle.click()
+        }
+    }
+
+    setInterval(kill, 42)
+}
+
+function winTheGame() {
+    function kill() {
+        const cookie = document.querySelector('#bigCookie')
+
+        if (cookie) {
+            cookie.click()
+        }
+    }
+
+    setInterval(kill, 40)
+}
